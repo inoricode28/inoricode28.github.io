@@ -11,13 +11,25 @@
     <link rel="icon" type="Detalles/png" href="Detalles/logo.png">    
     <script src="app.js" async></script>    
     <title>MS COMPUTERS Perú | Mejores Ofertas en compras online</title>
-    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>    
+  
+    
     <header>
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+            <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+          </div>
+          <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+          </div>
     </header>
     <section class="contenedor">
+        
         <!-- Contenedor de elementos -->
         <div class="contenedor-items">
             <div class="item">
@@ -171,5 +183,14 @@
             </div>
         </div>
     </section>
+    <script>
+        function openLeftMenu() {
+          document.getElementById("leftMenu").style.display = "block";
+        }
+        
+        function closeLeftMenu() {
+          document.getElementById("leftMenu").style.display = "none";
+        }
+     </script>   
 </body>
 </html>
