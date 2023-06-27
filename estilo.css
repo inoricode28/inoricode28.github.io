@@ -3,14 +3,78 @@
     margin: 0;
     padding:0;
     font-family: "Open Sans";
-}
+}/*
 header{
     background: url(Detalles/fuente);
     background-size: cover;
     background-position: right center;
     height: 300px;
+    margin: 0 7vw;
+}*/
+.w3-teal1, .w3-hover-teal:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+    padding: 0 0 0 7vw;
 }
+    .navbar {
+    overflow: hidden;
+    background-color: #333; 
+    padding: 0 0 0 2vw;
+    }
 
+    .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .subnav {
+    float: left;
+    overflow: hidden;
+    }
+
+    .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+
+    .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+    }
+
+    .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+    padding: 0 0 0 9vw;
+    }
+
+    .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    }
+
+    .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+    }
+
+    .subnav:hover .subnav-content {
+    display: block;
+    }
 @keyframes animatebf{
     100%{
         filter: hue-rotate(460deg);
@@ -73,7 +137,6 @@ body {
     align-items: center;
     min-height: 100vh;
 
-
 .contenedor{
     max-width: 1200px;
     padding: 10px;
@@ -83,6 +146,132 @@ body {
     /* oculto lo que queda fuera del .contenedor */
     contain: paint;
 }
+/* CSS para Slider */
+
+.container-slider{
+    margin:  0;
+    overflow: hidden;
+    position: relative;
+ 
+ }
+ .slider{
+     display: flex;
+     height: 28vw;
+     width: 400%;
+     margin-left: -100%;
+ }
+ .slider__section{
+     width: 100%;
+     position: relative;
+     
+ }
+ .slider__img{
+     
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+ .slider__btn{
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     background-color: rgba(212, 212, 212, 0.87);
+     top: 50%;
+     transform: translateY(-50%);
+     font-family: monospace;
+     font-size: 20px;
+     font-weight: bold;
+     
+     border-radius: 50%;
+     cursor: pointer;
+     border: solid 1px white;
+     text-align: center;
+     justify-content: center;
+     line-height: 2em;
+     z-index: 999;
+     color: black;
+     
+ }
+ .slider__btn--left{
+     left: 10px;
+ }
+ .slider__btn--right{
+     right: 10px;
+ }
+ .slider__btn:hover{
+     background-color: rgba(244, 16, 16, 0.917);
+     transition: 0.05s;
+ }
+ /* -------------------------- */
+ /*contenedor inicio*/
+
+.container_inicio {
+    background-color: #fff;
+    padding: 1vw 7vw;
+    display: flex;
+    align-items: center;
+}
+.container_inicio .divisiones {
+    width: 33%;
+}
+.container_inicio .divisiones img {
+    width: 400px;
+}
+
+.container_inicio .formulario {
+    width: 33%;
+    position: relative;
+    margin: 0 5vw;
+}
+.container_inicio .formulario input[type="text"] {
+    height: 43px;
+    padding-right: 53px;
+    padding-left: 5%;
+    margin-left: -1px;
+    background: #fff;
+    color: inherit;
+    border-color: #c7c7c7;
+}
+.form-control {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 5px;
+    line-height: 1.25rem;
+    height: 34px;
+}
+.container_inicio .formulario [type="submit"] {
+    border: none;
+    text-align: center;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 9.75vw;
+    width: 43px;
+    height: 43px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    background-color: red !important;
+    color: white;
+}
+.container_inicio .divisiones .cuenta {
+    width: 30%;
+}
+.container_inicio .divisiones .cuenta a {
+    border: 2px solid;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 5px 7px;
+    font-size: .875rem;
+    white-space: nowrap;
+}
+.container_inicio .divisiones .cuenta a span{
+    padding: 0 2px;
+}
+ /********************/
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
     margin-top: 30px;
