@@ -76,20 +76,51 @@
         <a href="#terminos">TERMINOS Y CONDICIONES</a>
       </div>  
     </header>
+    <div class="menu_mobile">
+        <div class="logo"><img src="Detalles/img_slide/logo.png"></div>
+        <div class="mobile_buscar">
+            <div class="menu">
+                <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+                    <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                </div>
+                <div class="w3-teal1">
+                    <button class="w3-button w3-teal1 w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+                </div>
+            </div>
+            <div class="buscar">
+                <div class="formulario">
+                    <input class="form-control ui-autocomplete-input" type="text" name="s" value="" placeholder="Buscar en catálogo" aria-label="Buscar" autocomplete="off">
+                    <button type="submit" class="btn-primary">
+                        <i class="material-icons search">search</i>
+                    </button>
+                </div>           
+            </div>
+            <div class="sesion">
+                <div class="cuenta">
+                    <a href="#" title="Acceda a su cuenta de cliente" rel="nofollow">
+                        <i class="material-icons">person</i>
+                    </a>
+                </div>  
+            </div>
+        </div>
+    </div>
     <div class="container-slider">
         <div class="slider" id="slider">
-        <div class="slider__section">
-            <img src="Detalles/img_slide/021.png" alt="" class="slider__img">
-        </div>
-        <div class="slider__section">
-            <img src="Detalles/img_slide/022.png" alt="" class="slider__img">
-        </div>
-        <div class="slider__section">
-            <img src="Detalles/img_slide/023.png" alt="" class="slider__img">
-        </div>
-        <div class="slider__section">
-            <img src="Detalles/img_slide/024.png" alt="" class="slider__img">
-        </div>
+            <div class="slider__section">
+                <img src="Detalles/img_slide/021.png" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="Detalles/img_slide/022.png" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="Detalles/img_slide/023.png" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="Detalles/img_slide/024.png" alt="" class="slider__img">
+            </div>
         </div>
         <div class="slider__btn slider__btn--right" id="btn-rigth"><i class="fas fas fas fa-arrow-right"></i></div>
         <div class="slider__btn slider__btn--left" id="btn-left"><i class="fas fas fa-arrow-left"></i></div>
