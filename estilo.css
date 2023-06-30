@@ -78,6 +78,68 @@ header{
     .menu_mobile {
         display: none;
     }
+    .shopping-cart-module {
+        margin-left: 2%;
+    }
+    .cart-preview {
+        position: relative;
+        background-color: #ff0b37;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    .cart-preview:hover {
+        background-color: #f36882;
+        color: #000;
+    }
+    .cart-preview .cart-header {
+        text-align: center;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+    .cart-preview .cart-header .cart-link {
+        display: flex;
+        border-radius: 3px;
+        padding: 7px 8px;
+        font-weight: 700;
+        font-size: .875rem;
+        white-space: nowrap;
+        transition: all 0.3s;
+    }
+    .cart-preview .cart-header .cart-link>span {
+        padding: 0 2px;
+        text-decoration: none;
+    }
+    .cart-preview .cart-header .cart-design {
+        position: relative;
+    }
+    .cart-preview .cart-header .cart-products-count {
+        position: absolute;
+        top: -12px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: block;
+        font-size: 10px;
+        text-align: center;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        background-color: #fd6282;
+        color: #fff;
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+    .fa {
+        min-width: 1em;
+        height: 1em;
+        line-height: 1;
+    }
+    .btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+        border-color: #ff0b37;
+    }
 
     @media (max-width: 400px) {
         .container_inicio {
@@ -283,6 +345,7 @@ body {
 }
 .container_inicio .divisiones {
     width: 33%;
+    display: flex;
 }
 .container_inicio .divisiones img {
     width: 400px;
@@ -326,7 +389,7 @@ body {
     color: white;
 }
 .container_inicio .divisiones .cuenta {
-    width: 30%;
+    width: 27%;
 }
 .container_inicio .divisiones .cuenta a {
     border: 2px solid;
@@ -336,6 +399,11 @@ body {
     padding: 5px 7px;
     font-size: .875rem;
     white-space: nowrap;
+    text-decoration: none;
+}
+.container_inicio .divisiones .cuenta a:hover {
+    color: #ff0b37;
+    transition: 0.5s;
 }
 .container_inicio .divisiones .cuenta a span{
     padding: 0 2px;
