@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>PRACTICA 4 IDAT</title>
+        <link rel="stylesheet" href="mantenimiento.css">
+    </head>
+    <body>
+    <div>
+        <ul>
+            <li><img src="./img/logo.png" width="200px"></li>
+            <li><a href="./usuario.html">Usuarios</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="http://127.0.0.1:5500/formularios/Mantenimiento/proveedores.html">Proveedores</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#ventas">Ventas</a></li>
+            <li><a href="#nueva_venta">Nueva Venta</a></li>
+            <li style="float:right"><a class="active" href="#facturacion">Facturación</a></li>
+        </ul>
+    </div>
+    <div class="contenedor">
+        <div class="btn_proveedor"><button class="btn_pro_bus" type="button">Nuevo Proveedor <i class="fa fa-plus-circle" aria-hidden="true"></i></button></div>
+        <h1> Listado de Proveedores </h1>
+        <div class="text_input">
+            <input type="text" class="form-control" placeholder="Ingrese algun dato para buscar..." aria-describedby="basic-addon2">
+            <div class="input-group"><button class="btn_pro_bus" type="button">Buscar <i class="fa fa-search" aria-hidden="true"></i></button></div>
+        </div>
+        <div class="container_table">            
+            <table class="tabla">
+                <thead class="t_header">
+                    <tr>
+                        <th>ID </th>
+                        <th>RUC</th>
+                        <th>NOMBRE</th>
+                        <th>TELÉFONO</th>
+                        <th>DIRECCIÓN</th>
+                        <th>RAZÓN SOCIAL</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody class="t_body">
+                    <tr>
+                        <th>1</th>
+                        <th>20600216512</th>
+                        <th>Hp</th>
+                        <th>983153838</th>
+                        <th>Lima-Peru</th>
+                        <th>Deltron</th>
+                        <th>
+                            <a>
+                                <button class="btn_actualizar"><i class="fa fa-pencil" aria-hidden="true"></i> Actualizar</button>
+                                <button class="btn_eliminar"><i class="fa fa-trash" aria-hidden="true"></i> Eliminar</button>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th>20600296321</th>
+                        <th>Lenovo</th>
+                        <th>983154558</th>
+                        <th>Lima-Peru</th>
+                        <th>Magitech</th>
+                        <th>
+                            <a>
+                                <button class="btn_actualizar"><i class="fa fa-pencil" aria-hidden="true"></i> Actualizar</button>
+                                <button class="btn_eliminar"><i class="fa fa-trash" aria-hidden="true"></i> Eliminar</button>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th>20600285221</th>
+                        <th>Asus</th>
+                        <th>983196325</th>
+                        <th>Lima-Peru</th>
+                        <th>Magitech</th>
+                        <th>
+                            <a>
+                                <button class="btn_actualizar"><i class="fa fa-pencil" aria-hidden="true"></i> Actualizar</button>
+                                <button class="btn_eliminar"><i class="fa fa-trash" aria-hidden="true"></i> Eliminar</button>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <th>20607035358</th>
+                        <th>HP</th>
+                        <th>984863225</th>
+                        <th>Lima-Peru</th>
+                        <th>HP Peru</th>
+                        <th>
+                            <a>
+                                <button class="btn_actualizar"><i class="fa fa-pencil" aria-hidden="true"></i> Actualizar</button>
+                                <button class="btn_eliminar"><i class="fa fa-trash" aria-hidden="true"></i> Eliminar</button>
+                            </a>
+                        </th>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </body>
+</html>

@@ -112,3 +112,17 @@ body{
     cursor: pointer;
     background-color: var(--azulOscuro);
 }
+.input input[type="button"]{
+    background-color: var(--azulGris);
+    color: var(--blanco);
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    transition: background-color .3s ease-in-out;
+}
+.input input[type="button"]:hover{
+  
+    cursor: pointer;
+    background-color: var(--azulOscuro);
+}
